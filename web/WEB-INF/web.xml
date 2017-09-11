@@ -6,7 +6,17 @@
 
     <servlet>
         <servlet-name>RegisterUIServlet</servlet-name>
-        <servlet-class>me.aaron.web.UI.RegisterUIServlet</servlet-class>
+        <servlet-class>aaron.web.UI.RegisterUIServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>aaron.web.controller.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LoginUIServlet</servlet-name>
+        <servlet-class>aaron.web.UI.LoginUIServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -14,13 +24,13 @@
         <url-pattern>/servlet/RegisterUIServlet</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>RegisterServlet</servlet-name>
-        <servlet-class>me.aaron.web.controller.RegisterServlet</servlet-class>
-    </servlet>
-
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/servlet/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LoginUIServlet</servlet-name>
+        <url-pattern>/servlet/LoginServlet</url-pattern>
     </servlet-mapping>
 </web-app>
